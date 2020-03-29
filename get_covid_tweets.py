@@ -6,7 +6,7 @@ try:
     tweeget = Tweeget('xxxxx', 'xxxxx')
 
     get_tweets = True
-    next_page = 'eyJtYXhJZCI6MTIzODc3Mjc4ODc4MzE2OTUzNn0='
+    next_page = None
     while get_tweets:
         json_return = tweeget.thirty_archive('(febre OR "falta de ar" OR tossindo OR tosse OR "dor de garganta" OR resfriado OR gripado) lang:pt place_country:BR place:"Rio de Janeiro"', \
                                              env = 'DEV', fromDate ='202003010000', toDate='202003280000', next_page = next_page)
